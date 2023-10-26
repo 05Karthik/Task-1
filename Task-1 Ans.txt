@@ -1,0 +1,254 @@
+Answers:
+
+No-1 :
+import java.util.Scanner;
+	public class Training {
+	    public static void main(String[] args) {
+	    	  Scanner sc= new Scanner(System.in);
+	          System.out.print("Enter data a");
+	          int a=sc.nextInt();
+	          System.out.println("Enter data b");
+	          int b=sc.nextInt();
+	          System.out.println("Enter data c");
+	          int c=sc.nextInt();
+	          System.out.println("Enter data d");
+	          int d=sc.nextInt();
+	          
+	          int x= a+b;
+	          
+	          int y= c+d;
+	          
+	          if(x > y) {
+	          
+	        	System.out.println("The sum of a and b is Greater Than sum of c and d");  
+	          
+	          }
+	          else {
+	        	  
+	        	  System.out.println("The sum of c and d is Greater Than sum of a and b");
+	          }
+	    }
+	  }
+
+
+Input = a=4,b=4,c=3,c=2
+
+Output = The sum of a and b is Greater Than sum of c and d
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+No-2 :
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+             Scanner sc = new Scanner(System.in);
+
+	            System.out.print("Enter a number");
+	            int num;
+	            num = sc.nextInt();
+
+	            if(num % 2 == 0)
+	                System.out.println(num + " is a even number");
+	            else
+	                System.out.println(num + " is not a even number");
+	        }
+	    }
+
+Input = 6
+
+Output = 6 is a even number
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+No-3 :
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the Letters");
+        String data=sc.nextLine();
+        System.out.println(data);
+        }
+}
+
+Input :
+	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+output:
+	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+No-4 :
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+             Scanner sc = new Scanner(System.in);  
+	         System.out.println("Enter the value of X and Y");
+	         int x,y,t;
+	         x = sc.nextInt();  
+	         y = sc.nextInt();  
+	         System.out.println("X="+x +" Y="+ y);  
+	         t = x;  
+	         x = y;  
+	         y = t;  
+	         System.out.println("X="+x +" Y="+ y);  
+	         System.out.println( );  
+	      }    
+	  }  
+
+Input = x=43 y=54
+
+Output = x=54 y=43
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+No-5 :
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+	         System.out.println("Enter a number");
+	        
+	         int num = sc.nextInt();
+	         
+	         int count = 0;
+	         if(num == 2) {
+	            System.out.println("It's a prime number");
+	         } 
+	         else {
+	            for(int i = 1; i <= num; i++) {
+	               if(num % i == 0) {
+	                  count++;
+	               }
+	            }
+	            
+	            if(count == 2) {
+	               System.out.println("It's a prime number");
+	            } else {
+	               System.out.println("It's not a prime number");
+	          }
+	            
+	         }
+	     	 }
+	}   
+
+
+Input = 5
+
+Output = It's a Prime Number
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+No-6 :
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Value");
+        int value = sc.nextInt();
+        int fact=1;
+        
+        for(int i=1; i<=value;i++){
+            fact = fact*i;
+            System.out.println(fact);
+        }
+        }
+}
+
+Input = 5
+
+Output = 120
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+No-7 :
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the String");
+        String str = sc.nextLine();
+      
+        int len = str.length();
+        System.out.println("\nLength of the String = " +len);
+    }
+}
+
+Input = GuviGeek
+
+Output = Length of the String = 8
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+No-8 :
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Name");
+        String name = sc.nextLine();
+        for(int i=0; i<10; i++){
+        System.out.println(name);
+        }
+    }
+}
+
+Input = Welcome to Guvi
+
+Output= Welcome to Guvi
+	Welcome to Guvi
+	Welcome to Guvi
+	Welcome to Guvi
+	Welcome to Guvi
+	Welcome to Guvi
+	Welcome to Guvi
+	Welcome to Guvi
+	Welcome to Guvi
+	Welcome to Guvi
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+No-9 :
+	import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Age of Citizen");
+        int age = sc.nextInt();
+        if (age>=60){
+            System.out.println("Senior Citizen");
+        }
+        else{
+            System.out.println("Not a Senior Citizen");
+        }
+        
+    }
+}
+
+Input = 61
+Output = Senior Citizen
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+No-10 :
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num = sc.nextInt();   
+		int count = 0;
+		     
+		for(count=0; num!=0; num=num/10) {
+			    
+		count++;
+		}
+		System.out.println("Number of digits are "+count);
+	  }
+	}
+
+
+Input = 54321
+
+Output = Number of Digits are 5
+
